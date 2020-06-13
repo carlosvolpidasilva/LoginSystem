@@ -6,15 +6,15 @@ import DataBase
 
 # Criar nossa janela
 jan = Tk()
-jan.title("ABC Systems - Acess Panel")
+jan.title("ABC Systems - Access Panel")
 jan.geometry("600x300")
 jan.configure(background="white")
 jan.resizable(width=False, height=False)
 jan.attributes("-alpha", 0.9)
-jan.iconbitmap(default="icons/LogoIcon.ico")
+#jan.iconbitmap(default="icons/LogoIcon.ico")
 
 #Carregar Imagens
-logo= PhotoImage(file="icons/logo3remove.png")
+logo= PhotoImage(file="icons/ABCSystemsLogo.png")
 
 #Widgets
 LeftFrame = Frame(jan, width=200, height=300, bg="MIDNIGHTBLUE", relief="raise")
@@ -24,7 +24,7 @@ RightFrame = Frame(jan, width=395, height=300, bg="MIDNIGHTBLUE", relief="raise"
 RightFrame.pack(side=RIGHT)
 
 LogoLabel = Label(LeftFrame, image=logo, bg="MIDNIGHTBLUE")
-LogoLabel.place(x=10, y=80)
+LogoLabel.place(x=-15, y=70)
 
 UserLabel = Label(RightFrame, text="Username:", font=("Century Gothic", 20), bg="MIDNIGHTBLUE", fg="White")
 UserLabel.place(x=5, y=100)
